@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Planetary Invasion Home Destruction Exemption Request - Martian Industries</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <a class="skip-to-content" href="#site-main">Skip to content</a>
+        <header class="site-header">
+            <a class="site-header-brand" href="#">Martian Industries<sup>&#8482;</sup></a>
+            <button class="site-header-navigation-toggle" id="navigation-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="site-header-navigation-toggle-text">Activate navigation</span>
+            </button>
+        </header>
+
+        <nav class="site-navigation" id="site-navigation" tabindex="-1">
+            <ul class="site-navigation-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Martian Industries</a>
+                </li>
+                <li>
+                    <a href="#">Contact Martian Industries</a>
+                </li>
+                <li class="current-page">
+                    <a href="#">Excemption Request</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="site-main" id="site-main">
+            <div class="container">
+                <h1 class="page-heading">Planetary Invasion Home Destruction Exemption Request</h1>
+                <p>As part of Martian Industries<sup>&#8482;</sup> standard planetary invasion procedure, we will be systematically and humanely destroying all [HUMAN] habitats on [EARTH] at a yet to be determined time and entirely without notice. You may request an exemption using the following form.</p>
+                <form class="form" id="form">
+                    <div class="form-group">
+                        <input class="form-control" id="name" name="name" type="text" required aria-required="true">
+                        <label class="form-label" for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" name="email" type="email" required aria-required="true">
+                        <label class="form-label" for="email">Email</label>
+                        <span class="form-note hidden" id="email-note">Please supply a valid email address.</span>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="address" name="address" type="text" aria-describedby="address-note">
+                        <label class="form-label" for="address">Address</label>
+                        <span class="form-note" id="address-note">Optional</span>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="city" name="city" type="text" aria-describedby="city-note">
+                        <label class="form-label" for="city">City</label>
+                        <span class="form-note" id="city-note">Optional</span>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="province" name="province" type="text" aria-describedby="province-note">
+                        <label class="form-label" for="province">Province / State</label>
+                        <span class="form-note" id="province-note">Optional</span>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="country" name="country" aria-describedby="country-note">
+                            <option selected value="">&nbsp;</option>
+                            <option>United States</option>
+                            <option>Canada</option>
+                        </select>
+                        <label class="form-label" for="country">Country</label>
+                        <span class="form-note" id="country-note">Optional</span>
+                    </div>
+                    <div class="form-group hidden" id="form-group-postal-code">
+                        <input class="form-control" id="postal-code" name="postal_code" type="text" disabled aria-required="false" aria-describedby="postal-code-note" minlength="6" maxlength="7">
+                        <label class="form-label" for="postal-code">Postal Code</label>
+                        <span class="form-note" id="postal-code-note">Optional</span>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="phone" name="phone" type="tel" aria-describedby="phone-note" pattern="^[0-9\-\+\s\(\)]*$" minlength="10">
+                        <label class="form-label" for="phone">Phone</label>
+                        <span class="form-note" id="phone-note">Optional</span>
+                    </div>
+                    <div class="form-submit-container">
+                        <button class="form-submit" type="submit">
+                            <span class="form-submit-text">Send</span>
+                            <i class="form-submit-icon fa fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <p class="form-disclaimer">* Please allow a period of between four (4) and five (5) millenia for processing. Martian Industries<sup>&#8482;</sup> assumes no responsibility for requests processed after habitat destruction.</p>
+                </form>
+                <div class="form-loader hidden" id="form-loader">
+                    <i class="form-loader-icon fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                    <span class="form-loader-text">Sending</span>
+                </div>
+                <div class="form-confirmation-message hidden" id="form-confirmation-message">
+                    <h2>Congratulations!</h2>
+                    <p>Your request has been sent. Upon successful receipt, your habitat will be bumped to the top of our priority destruction sequence. Martian Industries<sup>&#8482;</sup> wishes you a wonderful day.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; Copyright 2017 Martian Industries. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div class="site-fader"></div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
