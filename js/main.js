@@ -96,12 +96,27 @@
         }, 3000);
     }
 
+    function resetForm() {
+        form.reset();
+
+        for (var i = 0; i < formControls.length; i++) {
+            formControls[i].classList.remove('filled');
+            formControls[i].classList.remove('error');
+            formControls[i].classList.remove('valid');
+        }
+
+        formConfirmationMessage.classList.add('hidden');
+        form.classList.remove('hidden');
+        formControls[0].focus();
+    }
+
     var site = document.documentElement,
         body = document.body,
         navigationToggle = document.getElementById('navigation-toggle'),
         siteNavigation = document.getElementById('site-navigation'),
         form = document.getElementById('form'),
         formConfirmationMessage = document.getElementById('form-confirmation-message'),
+        formConfirmationMessageButton = document.getElementById('form-confirmation-message-button'),
         formLoader = document.getElementById('form-loader'),
         formGroupPostalCode = document.getElementById('form-group-postal-code'),
         formControls = document.getElementsByClassName('form-control'),
@@ -113,6 +128,7 @@
     navigationToggle.addEventListener('click', toggleNavigation);
     form.addEventListener('submit', formSubmission);
     formControlCountry.addEventListener('input', togglePostalCode);
+    formConfirmationMessageButton.addEventListener('click', resetForm);
 
     for (var i = 0; i < formControls.length; i++) {
         formControls[i].addEventListener('input', validateFormControl);

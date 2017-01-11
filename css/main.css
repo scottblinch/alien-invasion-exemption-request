@@ -53,6 +53,18 @@ button,
 .form-label {
   transition: all .3s ease-in-out; }
 
+.button {
+  padding: 0 2rem;
+  color: #fff;
+  line-height: 2;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+  background-color: #f44336; }
+  .button:hover, .button:focus {
+    background-color: rgba(244, 67, 54, 0.75);
+    outline: none; }
+
 .skip-to-content {
   position: absolute;
   width: 1px;
@@ -247,28 +259,19 @@ button,
   font-size: .8rem;
   color: #9e9e9e; }
 
-.form-submit {
-  padding: 0 2rem;
-  color: #fff;
-  line-height: 2;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 2px;
-  background-color: #f44336; }
-  .form-submit:hover, .form-submit:focus {
-    background-color: rgba(244, 67, 54, 0.75);
-    outline: none; }
-  .form-submit-container {
-    margin-top: 1rem;
-    text-align: center; }
-  .form-submit-text {
-    display: inline-block;
-    vertical-align: middle; }
-  .form-submit-icon {
-    display: inline-block;
-    margin-left: .5rem;
-    font-size: .8em;
-    vertical-align: middle; }
+.form-submit-container {
+  margin-top: 1rem;
+  text-align: center; }
+
+.form-submit-text {
+  display: inline-block;
+  vertical-align: middle; }
+
+.form-submit-icon {
+  display: inline-block;
+  margin-left: .5rem;
+  font-size: .8em;
+  vertical-align: middle; }
 
 .form-disclaimer {
   font-size: .75rem; }

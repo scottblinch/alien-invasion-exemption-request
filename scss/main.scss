@@ -124,6 +124,22 @@ button,
     transition: all .3s ease-in-out;
 }
 
+.button {
+    padding: 0 2rem;
+    color: $white;
+    line-height: 2;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    background-color: $primary;
+
+    &:hover,
+    &:focus {
+        background-color: fade-out($primary, .25);
+        outline: none;
+    }
+}
+
 .skip-to-content {
     @include screen-reader-only;
     @include screen-reader-only-focusable;
@@ -369,20 +385,6 @@ button,
     }
 
     &-submit {
-        padding: 0 2rem;
-        color: $white;
-        line-height: 2;
-        text-transform: uppercase;
-        border: 0;
-        border-radius: 2px;
-        background-color: $primary;
-
-        &:hover,
-        &:focus {
-            background-color: fade-out($primary, .25);
-            outline: none;
-        }
-
         &-container {
             margin-top: 1rem;
             text-align: center;
