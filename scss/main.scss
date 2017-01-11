@@ -333,20 +333,6 @@ button,
             }
         }
 
-        &.error,
-        &:invalid.filled {
-            border-bottom-color: $red;
-
-            & + .form-label {
-                color: $red;
-            }
-
-            & ~ .form-note {
-                display: block;
-                color: $red;
-            }
-        }
-
         &.filled.valid:not(:invalid),
         &:valid.filled {
             border-bottom-color: $green;
@@ -358,6 +344,22 @@ button,
 
             & ~ .form-note {
                 color: $green;
+            }
+        }
+
+        &.error,
+        &.error.filled,
+        &:invalid.filled {
+            border-bottom-color: $red;
+            box-shadow: 0 1px 0 $red;
+
+            & + .form-label {
+                color: $red;
+            }
+
+            & ~ .form-note {
+                display: block;
+                color: $red;
             }
         }
     }

@@ -225,13 +225,6 @@ button,
       transform: translateY(-140%); }
   .form-control:focus + .form-label {
     color: #f44336; }
-  .form-control.error, .form-control:invalid.filled {
-    border-bottom-color: #f44336; }
-    .form-control.error + .form-label, .form-control:invalid.filled + .form-label {
-      color: #f44336; }
-    .form-control.error ~ .form-note, .form-control:invalid.filled ~ .form-note {
-      display: block;
-      color: #f44336; }
   .form-control.filled.valid:not(:invalid), .form-control:valid.filled {
     border-bottom-color: #4Caf50;
     box-shadow: 0 1px 0 #4Caf50; }
@@ -239,6 +232,14 @@ button,
       color: #4Caf50; }
     .form-control.filled.valid:not(:invalid) ~ .form-note, .form-control:valid.filled ~ .form-note {
       color: #4Caf50; }
+  .form-control.error, .form-control.error.filled, .form-control:invalid.filled {
+    border-bottom-color: #f44336;
+    box-shadow: 0 1px 0 #f44336; }
+    .form-control.error + .form-label, .form-control.error.filled + .form-label, .form-control:invalid.filled + .form-label {
+      color: #f44336; }
+    .form-control.error ~ .form-note, .form-control.error.filled ~ .form-note, .form-control:invalid.filled ~ .form-note {
+      display: block;
+      color: #f44336; }
 
 .form select {
   appearance: none; }

@@ -1,4 +1,5 @@
 (function() {
+
     function toggleNavigation(event) {
         event.stopPropagation();
 
@@ -133,4 +134,5 @@
     for (var i = 0; i < formControls.length; i++) {
         formControls[i].addEventListener('input', validateFormControl);
     }
+
 })();
